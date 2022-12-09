@@ -1,0 +1,139 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,400&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,500;1,700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Montserrat;
+}
+
+.fondo{
+    width: 100%;
+    height: 300px;
+}
+
+nav{
+    width: 100%;
+    background: linear-gradient(#21005d, #000729);
+    top: 11px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: absolute;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-links a{
+    color:wheat;
+    cursor: pointer;
+}
+
+
+.profile-img{
+    border-radius: 50%;
+    width: 150px;
+    position: relative;
+    top: -90px;
+    left: 20px;
+}
+
+
+i{
+    font-size: 30px;
+    color: black;
+    left: 200px;
+}
+
+.todo-container{
+    padding: 0rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.info{
+
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-img{
+    height:70px;
+}
+
+i{
+    position: relative;
+    bottom:  120px;
+    left:160px;
+}
+
+.btn{
+    padding: 0.2rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.info-contact{
+    display: none;
+}
+
+.retirar{
+    display: block;
+}
+
+section{
+    box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 1rem 0.5rem;
+    border-radius: 20px;
+    max-width: 700px;
+}
+
+.experiencia{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.primera-experiencia{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.link-exp {
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    padding: 1rem 2rem;
+    color: black;
+    /* transition: all 2s; */
+}
+
+.link-exp:hover{
+    color: white;
+    background: black;
+    transition: all 0.5s;
+}
+p{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+.primera-experiencia{
+    align-items: center;
+    }
+
+    .link-exp{
+        width: 60%;
+    }
+}
